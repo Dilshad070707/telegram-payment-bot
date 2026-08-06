@@ -24,7 +24,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"&cu=INR"
         f"&tn=Premium%20Video"
     )
-    keyboard = [
+keyboard = [
     [
         InlineKeyboardButton(
             text="💳 Pay ₹20",
@@ -33,7 +33,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
 ]
     
-    message = """
+message = """
 🎬 Welcome
 
 Premium Video dekhne ke liye pehle ₹20 payment karein.
