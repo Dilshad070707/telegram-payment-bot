@@ -1,6 +1,9 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
+# ==========================
+# SIRF TOKEN BHARNA HAI
+# ==========================
 BOT_TOKEN = "8988935332:AAHh3ruhx36wMFzAsDuiwbsTsnxLO8QbcCM"
 
 UPI_ID = "pinelabs.stq4616807@pineaxis"
@@ -27,7 +30,7 @@ Satlaj Movie Download Karne Ke Liye ₹20 Payment Karein.
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-✅ Payment Complete hone ke baad
+✅ QR Code Scan Karke Payment Karein.
 
 Payment Screenshot ya UTR sambhal kar rakhein.
 
@@ -36,12 +39,11 @@ Verification ke baad aapko Private Channel ka access diya jayega.
 Thank You ❤️
 """
 
-    with open("qr.png","rb") as qr:
-    await
-    update.message.reply_photo(
-        photo=qr,
-        caption=message
-      )
+    with open("qr.png", "rb") as qr:
+        await update.message.reply_photo(
+            photo=qr,
+            caption=message
+        )
 
 
 def main():
