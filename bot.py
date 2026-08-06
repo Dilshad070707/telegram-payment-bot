@@ -24,16 +24,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"&cu=INR"
         f"&tn=Premium%20Video"
     )
-
-    keyboard = [
-        [
-            InlineKeyboardButton(
-                text="💳 Pay ₹20",
-                url=upi_link,
-            )
-        ]
-    ]
-
+InlineKeyboardButton(
+    text="💳 Pay ₹20",
+    url=upi_link
+)
+    
     message = """
 🎬 Welcome
 
