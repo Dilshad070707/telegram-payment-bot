@@ -33,7 +33,7 @@ keyboard = [
     ]
 ]
     
-    message = """
+message = """
 🎬 Welcome
 
 Premium Video dekhne ke liye pehle ₹20 payment karein.
