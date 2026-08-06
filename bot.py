@@ -1,45 +1,29 @@
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
-
-# ==============================
-# SIRF IN 3 LINES KO BHARNA HAI
-# ==============================
 
 BOT_TOKEN = "8988935332:AAHh3ruhx36wMFzAsDuiwbsTsnxLO8QbcCM"
 
 UPI_ID = "pinelabs.stq4616807@pineaxis"
-
 PAYEE_NAME = "R.s Treding Co"
-
-# ==============================
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
-    upi_link = (
-        f"upi://pay?"
-        f"pa={UPI_ID}"
-        f"&pn={PAYEE_NAME}"
-        f"&am=20"
-        f"&cu=INR"
-        f"&tn=Premium%20Video"
-    )
-
-    keyboard = [
-        [
-            InlineKeyboardButton(
-                text="💳 Pay ₹20",
-                url=upi_link
-            )
-        ]
-    ]
-
-    message = """
+    message = f"""
 🎬 Welcome
 
 Premium Video dekhne ke liye pehle ₹20 payment karein.
 
-👇 Neeche diye gaye button par click karke payment karein.
+━━━━━━━━━━━━━━━━━━━━━━
+
+💳 UPI ID:
+{UPI_ID}
+
+👤 Name:
+{PAYEE_NAME}
+
+💰 Amount:
+₹20
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
@@ -52,10 +36,7 @@ Verification ke baad aapko Private Channel ka access diya jayega.
 Thank You ❤️
 """
 
-    await update.message.reply_text(
-        text=message,
-        reply_markup=InlineKeyboardMarkup(keyboard),
-    )
+    await update.message.reply_text(message)
 
 
 def main():
