@@ -32,13 +32,14 @@ Satlaj Movie Download Karne Ke Liye ₹20 Payment Karein.
 
 ✅ QR Code Scan Karke Payment Karein.
 
-Payment Screenshot ya UTR sambhal kar rakhein.
+📸 Payment Karne Ke Baad **Isi Bot Me** Apna Payment Screenshot Ya UTR Number Bheje.
 
-Verification ke baad aapko Private Channel ka access diya jayega.
+⏳ Screenshot Verify Hone Ke Baad Aapko **Private Channel Ka Join Link Isi Bot Me** Bhej Diya Jayega.
+
+❌ Screenshot Ya UTR Bheje Bina Channel Access Nahi Diya Jayega.
 
 Thank You ❤️
 """
-
     with open("qr.png", "rb") as qr:
         await update.message.reply_photo(
             photo=qr,
