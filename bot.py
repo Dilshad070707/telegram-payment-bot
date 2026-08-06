@@ -12,7 +12,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message = f"""
 🎬 Welcome
 
-Premium Video dekhne ke liye pehle ₹20 payment karein.
+Satlaj Movie Download Karne Ke Liye ₹20 Payment Karein.
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
@@ -36,7 +36,11 @@ Verification ke baad aapko Private Channel ka access diya jayega.
 Thank You ❤️
 """
 
-    await update.message.reply_text(message)
+    with open("qr.png", "rb") as qr:
+    await update.message.reply_photo(
+        photo=qr,
+        caption=message
+    )
 
 
 def main():
