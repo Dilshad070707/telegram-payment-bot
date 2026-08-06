@@ -36,7 +36,7 @@ Verification ke baad aapko Private Channel ka access diya jayega.
 Thank You ❤️
 """
 
-    with open("qr.png", "rb") as qr:
+    with open("qr.png","rb") as qr:
     await
     update.message.reply_photo(
         photo=qr,
