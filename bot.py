@@ -37,7 +37,8 @@ Thank You ❤️
 """
 
     with open("qr.png", "rb") as qr:
-    await update.message.reply_photo(
+    await
+    update.message.reply_photo(
         photo=qr,
         caption=message
     )
